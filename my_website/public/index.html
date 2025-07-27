@@ -65,7 +65,7 @@
 
 </head>
   
-<body class="bg-gray-100 font-sans">
+<body class="bg-white-100 font-sans">
 
   <!-- Header -->
    
@@ -75,15 +75,15 @@
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between style="color: rgb(31, 41, 55);">
     <!-- Logo -->
     <a href="#home" class="flex items-center space-x-3">
-      <img src="logo.png" alt="Billfify Logo" class="h-12">
+      <img src="logo.png" alt="Billfify Logo" class="h-10">
       
     </a>
 
     <!-- Navigation -->
     <nav class="space-x-6 font-medium text-base md:text-lg">
-      <a href="#home" class="hover:text-blue-400 transition">Home</a>
-      <a href="#about" class="hover:text-blue-400 transition">About Us</a>
-      <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      <a href="#home" class="hover:text-blue-700 transition">Home</a>
+      <a href="#about" class="hover:text-blue-700 transition">About Us</a>
+      <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
     </nav>
   </div>
 </header>
@@ -91,26 +91,35 @@
 
 
 
-  <section id="home" class="relative h-screen flex flex-col justify-center items-center text-center text-white px-4">
-    <!-- Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('background.jpg');"></div>
-    
-    <!-- Overlay for fading -->
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-  
-    <!-- Content -->
-    <div class="relative z-10">
-      
-      <a href="https://form.jotform.com/251815998730166"
-         class="relative inline-block text-white text-lg font-semibold px-10 py-4 rounded-full
-                bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600
-                shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105
-                before:absolute before:inset-0 before:rounded-full before:blur before:opacity-50
-                before:bg-blue-500 before:-z-10">
-         Start Now
-      </a>
-    </div>
-  </section>
+<section id="home" class="relative h-screen flex justify-center items-center text-white px-4">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('gemini.png');"></div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+  <!-- Top-Centered Two-Line Heading -->
+  <div class="absolute top-28 left-1/4 z-10">
+    <h1 class="text-3xl md:text-7xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-green-900 via-green-800 to-green-700 drop-shadow-lg">
+      We Negotiate<br />You Save
+    </h1>
+  </div>
+
+  <!-- Call to Action Button -->
+  <div class="relative z-10">
+    <a href="https://form.jotform.com/251815998730166"
+       class="relative inline-block text-white text-lg font-semibold px-10 py-4 rounded-full
+              bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600
+              shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105
+              before:absolute before:inset-0 before:rounded-full before:blur before:opacity-50
+              before:bg-blue-500 before:-z-10">
+       Claim Now
+    </a>
+  </div>
+</section>
+
+
+
 
 
   <!-- company -->
@@ -209,7 +218,7 @@
 
   <!-- Reviews Section -->
 <!-- PROFESSIONAL REVIEW SECTION FOR BILLFIFY -->
-  <section class="relative z-10 py-14 px-4 md:px-10 bg-[#0a2540]/10">
+      <section class="relative z-10 py-14 px-4 md:px-10 bg-[#0a2540]/10">
   <div class="max-w-7xl mx-auto rounded-xl shadow-lg bg-white/95 backdrop-blur-md p-8">
     <h2 class="text-3xl font-bold text-[#0a2540] mb-10 text-center">Customer Reviews</h2>
 
@@ -238,14 +247,13 @@
           </template>
           <div id="ratingBreakdown"></div>
         </div>
-         <!---LOG IN -->
-         
+
         <!-- Review Form -->
         <form id="reviewForm" class="space-y-4">
           <textarea id="reviewText" rows="3" class="w-full border border-gray-300 rounded p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Write your review..."></textarea>
           <div class="text-sm text-gray-700">Your Rating:</div>
           <div id="qualityStars" class="flex gap-1 text-2xl text-gray-300 cursor-pointer"></div>
-          <button type="submit" class="w-full bg-[#123456] text-black py-2 rounded hover:bg-blue-800 transition">Submit Review</button>
+          <button type="submit" class="w-full bg-[#123456] text-black-400 py-2 rounded hover:bg-blue-800 transition">Submit Review</button>
         </form>
       </div>
 
@@ -254,13 +262,11 @@
     </div>
   </div>
 </section>
-
-<script>
+      <script>
   let qualityRating = 0;
   const allQualityRatings = [];
   const starCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 
-  // Create stars for rating input
   function generateStars(containerId) {
     const container = document.getElementById(containerId);
     container.innerHTML = '';
@@ -277,7 +283,6 @@
     }
   }
 
-  // Highlight active stars
   function updateStars(containerId, activeCount) {
     const stars = document.getElementById(containerId).querySelectorAll('span');
     stars.forEach((star, index) => {
@@ -286,7 +291,6 @@
     });
   }
 
-  // Initialize star input and rating bars
   function initBreakdownBars() {
     const container = document.getElementById('ratingBreakdown');
     for (let i = 5; i >= 1; i--) {
@@ -300,7 +304,7 @@
 
   function updateAverageDisplay() {
     const total = allQualityRatings.reduce((sum, val) => sum + val, 0);
-    const avg = total / allQualityRatings.length;
+    const avg = total / allQualityRatings.length || 0;
     document.getElementById('averageRating').textContent = avg.toFixed(1);
     document.getElementById('averageStars').textContent = '★★★★★'.slice(0, Math.round(avg)) + '☆☆☆☆☆'.slice(Math.round(avg));
     document.getElementById('totalRatings').textContent = `Based on ${allQualityRatings.length} rating${allQualityRatings.length > 1 ? 's' : ''}`;
@@ -312,40 +316,54 @@
     }
   }
 
-  // Initialize
-  generateStars('qualityStars');
-  initBreakdownBars();
+  function loadDefaultReviews() {
+    const defaultReviews = [
+      { text: "Billfify helped me cut down my internet bill by 25% in just a week! I wish I had known about this service earlier. Super smooth and professional.", rating: 5 },
+      { text: "Very useful and easy to use. Highly recommended.— Jenna T.", rating: 5 },
+      { text: "Excellent experience! The team negotiated my phone plan and I’m saving over $30/month now. Love the clean design and simple process.", rating: 5 },
+      { text: "Simple process, real results. Loved it!", rating: 5 },
+      { text: "I rarely leave reviews, but Billfify truly deserves it. The process was easy, and I saw savings within days. Everything was transparent and secure", rating: 5 },
+      { text: "The experience was great, but I had to reach out for support once to get updates. The team was helpful though", rating: 4 },
+      { text: "Saved $20/month on my electricity bill. Love the concept. Would love to see a mobile app version in the future", rating: 4 },
+    ];
+
+    defaultReviews.forEach(({ text, rating }) => {
+      allQualityRatings.push(rating);
+      starCounts[rating]++;
+
+      const reviewCard = document.createElement('div');
+      reviewCard.className = 'bg-gray-50 p-6 rounded-lg shadow-sm';
+      reviewCard.innerHTML = `
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center text-yellow-400 text-xl">
+            ${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}
+          </div>
+          <span class="text-sm text-gray-500">${new Date().toLocaleDateString()}</span>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed">${text}</p>
+      `;
+      document.getElementById('reviewList').prepend(reviewCard);
+    });
+
+    updateAverageDisplay();
+  }
+
+  // Show sign-in alerts
+  document.getElementById('reviewText').addEventListener('focus', () => {
+    alert('You have to sign in to leave a review.');
+  });
 
   document.getElementById('reviewForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    const reviewText = document.getElementById('reviewText').value.trim();
-    if (!reviewText || qualityRating === 0) {
-      alert('Please provide both a review and rating.');
-      return;
-    }
-
-    allQualityRatings.push(qualityRating);
-    starCounts[qualityRating]++;
-    updateAverageDisplay();
-
-    const reviewCard = document.createElement('div');
-    reviewCard.className = 'bg-gray-50 p-6 rounded-lg shadow-sm';
-    reviewCard.innerHTML = `
-      <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center text-yellow-400 text-xl">
-          ${'★'.repeat(qualityRating)}${'☆'.repeat(5 - qualityRating)}
-        </div>
-        <span class="text-sm text-gray-500">${new Date().toLocaleDateString()}</span>
-      </div>
-      <p class="text-gray-700 text-sm leading-relaxed">${reviewText}</p>
-    `;
-    document.getElementById('reviewList').prepend(reviewCard);
-
-    document.getElementById('reviewText').value = '';
-    qualityRating = 0;
-    updateStars('qualityStars', 0);
+    alert('You have to sign in to submit a review.');
   });
+
+  // Initialize all on page load
+  generateStars('qualityStars');
+  initBreakdownBars();
+  loadDefaultReviews();
 </script>
+
 
 
 
@@ -380,7 +398,7 @@
       <h3 class="text-lg font-semibold text-white mb-3">Connect</h3>
       <ul class="space-y-2">
         <li><a href="mailto:info@billfify.com" class="hover:text-white transition">info@billfify.com</a></li>
-        <li>Toronto, Ontario, Canada</li>
+        <li>Las Vegas, NV, 89148</li>
       </ul>
     </div>
 
