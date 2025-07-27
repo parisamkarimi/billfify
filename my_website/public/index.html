@@ -28,6 +28,18 @@
         scroll-behavior: smooth;
       }
   
+    @media (max-width: 640px) {
+      #home {
+        height: auto !important;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      .mobile-bg {
+        background-size: cover !important;
+        background-position: center top !important;
+      }
+    }
       /* Professional Navigation Hover Effect */
       nav a:hover {
         font-weight: bold;
@@ -91,63 +103,59 @@
 
 
 
-<section id="home" class="relative h-screen flex justify-center items-center text-white px-4">
-  <!-- Background Image -->
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('background.jpg');"></div>
+  <section id="home" class="relative h-screen sm:h-screen flex justify-center items-center text-white px-4">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center mobile-bg" style="background-image: url('background.jpg');"></div>
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
 
-  <!-- Top-Centered Two-Line Heading -->
-
-
-  <!-- Call to Action Button -->
-  <div class="relative z-12">
-    <a href="https://form.jotform.com/251815998730166"
-      class="relative inline-block text-white text-lg font-semibold px-20 py-3 rounded-full
-              bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600
-              shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1
-              before:content-[''] before:absolute before:inset-0 before:rounded-full before:blur before:opacity-50
-              before:bg-blue-400 before:-z-10">
-      Claim Now
-    </a>
-  </div>
-</section>
+    <!-- Call to Action Button -->
+    <div class="relative z-10 mt-10 sm:mt-0 text-center">
+      <a href="https://form.jotform.com/251815998730166"
+        class="inline-block text-white font-semibold rounded-full
+               bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600
+               shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1
+               px-6 py-2 text-sm sm:px-20 sm:py-3 sm:text-lg">
+        Claim Now
+      </a>
+    </div>
+  </section>
 
 
-
-
-
-  <!-- company -->
-<section class="bg-[#0a2540]/10 py-14 px-6 text-center">
+  <section class="bg-[#0a2540]/10 py-14 px-6 text-center">
   <h2 class="text-3xl font-bold text-[#0a2540] mb-10">Trusted by Our Partners</h2>
 
   <div class="flex justify-between items-center max-w-7xl mx-auto flex-wrap gap-y-8">
     <!-- Cox Communications -->
     <a href="https://www.cox.com/" target="_blank" title="Cox Communications"
-       class="transform hover:scale-105 transition duration-300 ease-in-out w-1/4">
-      <img src="Cox-Logo.png" alt="Cox Logo" class="h-16 md:h-20 object-contain mx-auto grayscale hover:grayscale-0 transition" />
+       class="transform hover:scale-105 transition duration-300 ease-in-out w-1/2 sm:w-1/4">
+      <img src="Cox-Logo.png" alt="Cox Logo"
+           class="h-12 sm:h-16 md:h-20 object-contain mx-auto grayscale hover:grayscale-0 transition" />
     </a>
 
     <!-- T-Mobile -->
     <a href="https://www.t-mobile.com/" target="_blank" title="T-Mobile"
-       class="transform hover:scale-105 transition duration-300 ease-in-out w-1/4">
-      <img src="T-Mobile.png" alt="T-Mobile Logo" class="h-16 md:h-20 object-contain mx-auto grayscale hover:grayscale-0 transition" />
+       class="transform hover:scale-105 transition duration-300 ease-in-out w-1/2 sm:w-1/4">
+      <img src="T-Mobile.png" alt="T-Mobile Logo"
+           class="h-12 sm:h-16 md:h-20 object-contain mx-auto grayscale hover:grayscale-0 transition" />
     </a>
 
     <!-- AT&T -->
     <a href="https://www.att.com/" target="_blank" title="AT&T"
-       class="transform hover:scale-105 transition duration-300 ease-in-out w-1/4">
-      <img src="ATT-Logo.png" alt="AT&T Logo" class="h-16 md:h-20 object-contain mx-auto grayscale hover:grayscale-0 transition" />
+       class="transform hover:scale-105 transition duration-300 ease-in-out w-1/2 sm:w-1/4">
+      <img src="ATT-Logo.png" alt="AT&T Logo"
+           class="h-12 sm:h-16 md:h-20 object-contain mx-auto grayscale hover:grayscale-0 transition" />
     </a>
 
     <!-- +50 Sign -->
-    <div class="text-3xl font-bold text-[#0a2540] flex items-center justify-center gap-2 w-1/4">
+    <div class="text-2xl sm:text-3xl font-bold text-[#0a2540] flex items-center justify-center gap-2 w-1/2 sm:w-1/4">
       <span>+50</span>
-      <span class="text-sm text-gray-500">More Partners</span>
+      <span class="text-xs sm:text-sm text-gray-500">More Partners</span>
     </div>
   </div>
 </section>
+
   <!-- About Us -->
   <section id="about" class="bg-gray-100 py-12 px-6">
     <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
