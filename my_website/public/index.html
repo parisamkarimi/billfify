@@ -8,10 +8,10 @@
     <meta name="keywords" content="discounts, savings, exclusive deals, best prices" />
     <meta name="author" content="Your Company Name" />
   
-    <title>We Negotiate, You Save</title>
+    <title>Billfify</title>
   
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="logo1.ico" type="image/x-icon">
   
     <!-- Tailwind CSS (Latest Version for Better Features) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -72,7 +72,7 @@
 <!-- Stunning Navy Header -->
 <!-- STUNNING DARK NAVY HEADER -->
 <header class=" top-0 z-50 bg-[#081826] text-white shadow-md backdrop-blur-sm" style="color: rgb(31, 41, 55);">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between style="color: rgb(31, 41, 55);">
+  <div class="max-w-7xl mx-auto px-2 py-4 flex items-center justify-between" style="color: rgb(31, 41, 55);">
     <!-- Logo -->
     <a href="#home" class="flex items-center space-x-3">
       <img src="logo.png" alt="Billfify Logo" class="h-10">
@@ -93,27 +93,23 @@
 
 <section id="home" class="relative h-screen flex justify-center items-center text-white px-4">
   <!-- Background Image -->
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('gemini.png');"></div>
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('background.jpg');"></div>
 
   <!-- Overlay -->
   <div class="absolute inset-0 bg-black bg-opacity-30"></div>
 
   <!-- Top-Centered Two-Line Heading -->
-  <div class="absolute top-28 left-1/4 z-10">
-    <h1 class="text-3xl md:text-7xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-green-900 via-green-800 to-green-700 drop-shadow-lg">
-      We Negotiate<br />You Save
-    </h1>
-  </div>
+
 
   <!-- Call to Action Button -->
-  <div class="relative z-10">
+  <div class="relative z-12">
     <a href="https://form.jotform.com/251815998730166"
-       class="relative inline-block text-white text-lg font-semibold px-10 py-4 rounded-full
-              bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600
-              shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105
-              before:absolute before:inset-0 before:rounded-full before:blur before:opacity-50
-              before:bg-blue-500 before:-z-10">
-       Claim Now
+      class="relative inline-block text-white text-lg font-semibold px-20 py-3 rounded-full
+              bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600
+              shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1
+              before:content-[''] before:absolute before:inset-0 before:rounded-full before:blur before:opacity-50
+              before:bg-blue-400 before:-z-10">
+      Claim Now
     </a>
   </div>
 </section>
@@ -181,38 +177,52 @@
   <section id="contact" class="bg-white py-12 px-6 text-center">
     <h2 class="text-3xl font-bold mb-6 text-gray-900">Contact Us</h2>
   
-    <div class="flex justify-center gap-8 text-3xl mb-8">
-      <!-- Email -->
-      <a href="mailto:Info@Billfify.com" class="text-gray-600 hover:text-red-600" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
+    <div class="flex justify-center gap-12 text-4xl mb-12">
+    <!-- Email -->
+    <a href="mailto:Info@Billfify.com" class="text-gray-700 hover:text-red-600 transition transform hover:scale-110" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/billfify?igsh=d2Zqa3RqZ3diMWpo" target="_blank" class="text-gray-700 hover:text-pink-600 transition transform hover:scale-110" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/12H788M4615/?mibextid=wwXIfr" target="_blank" class="text-gray-700 hover:text-blue-700 transition transform hover:scale-110" title="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:‪+17252212818‬" class="text-gray-700 hover:text-green-600 transition transform hover:scale-110" title="Call">
+      <i class="fas fa-phone"></i>
+    </a>
+</div>
   
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/billfify?igsh=d2Zqa3RqZ3diMWpo" target="_blank" class="text-gray-600 hover:text-pink-600" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-  
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/share/12H788M4615/?mibextid=wwXIfr" target="_blank" class="text-gray-600 hover:text-blue-700" title="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-  
-      <!-- Phone -->
-      <a href="tel:+17252212818" class="text-gray-600 hover:text-green-600" title="Call">
-        <i class="fas fa-phone"></i>
-      </a>
-    </div>
-  
-    <div class="text-lg text-gray-700 space-y-2">
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:Info@Billfify.com" class="text-blue-600 hover:underline">Info@Billfify.com</a>
-      </p>
-      <p>
-        <strong>Cell Phone:</strong>
-        <a href="tel:+17252212818" class="text-blue-600 hover:underline">(725) 221-2818</a>
-      </p>
-    </div>
+    <!-- <div class="max-w-xl mx-auto bg-white border border-gray-200 rounded-lg p-8 shadow-sm"> -->
+<style>
+  .contact-link {
+    color: rgb(31, 41, 55);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  .contact-link:hover {
+    color: rgb(20, 30, 50); /* Slightly darker shade for hover */
+    font-weight: 700;       /* Bold on hover */
+  }
+</style>
+
+<p class="text-lg text-gray-800">
+  <strong>Email:</strong>
+  <a href="mailto:Info@Billfify.com" class="contact-link">Info@Billfify.com</a>
+</p>
+<p class="text-lg text-gray-800">
+  <strong>Phone:</strong>
+  <a href="tel:+17252212818" class="contact-link">(725) 221-2818</a>
+</p>
+
+  </div>
   </section>
   
 
@@ -350,12 +360,12 @@
 
   // Show sign-in alerts
   document.getElementById('reviewText').addEventListener('focus', () => {
-    alert('You have to sign in to leave a review.');
+    alert('You have to Log in to leave a review.');
   });
 
   document.getElementById('reviewForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    alert('You have to sign in to submit a review.');
+    alert('You have to Log in to submit a review.');
   });
 
   // Initialize all on page load
@@ -372,7 +382,7 @@
   <!-- Footer -->
 <!-- Footer -->
 <footer class="bg-gray-800 text-gray-300 py-10 relative z-10">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
     
     <!-- Company -->
     <div>
@@ -388,8 +398,8 @@
     <div>
       <h3 class="text-lg font-semibold text-white mb-3">Legal</h3>
       <ul class="space-y-2">
-        <li><a href="#" onclick="openModal('privacyModal')" class="hover:text-white transition">Privacy Policy</a></li>
-        <li><a href="#" onclick="openModal('termsModal')" class="hover:text-white transition">Terms of Service</a></li>
+        <li><a  onclick="openModal('privacyModal')" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a  onclick="openModal('termsModal')" class="hover:text-white transition">Terms of Service</a></li>
       </ul>
     </div>
 
